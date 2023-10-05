@@ -17,8 +17,8 @@ class Movie
 
     [MaxLength(50)]
     public required string Director { get; set; }
-    
-    public required DateTime ReleaseYear { get; set; }
+
+    public required int ReleaseYear { get; set; }
 
     // Navigation property
     public ICollection<Actor> Actors { get; set; } = new List<Actor>();
